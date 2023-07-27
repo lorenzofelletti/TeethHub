@@ -10,6 +10,7 @@ If you want, you can contribute (see below).
 ### Examples by Topic
 - [Closures](closures/closures.md)
 - [Type-2 Grammars](type_2_grammars/grammars.md)
+- [Scala](scala/scala-examples.md)
 
 ## How to Contribute
 If you want to contribute to this repository, you can do so by opening issues or pull requests.
