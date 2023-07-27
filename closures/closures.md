@@ -110,3 +110,39 @@ console.log(switch2.isOn()); // false
 switch1.disable(); // switch1 is disabled
 switch2.enable(); // switch2 is enabled
 ```
+
+###  HTML IMG SLIDER
+Example of a closure creating a control structure for a `<img>` container in HTML to display and change a displayed image.
+This function return one method:
+- `next`: show the next foto in the `<img>` container
+```javascript
+    function imageChanger(imageUrls, imgElement){
+        let i = 0
+        
+        function increment(){ i = (i+1)%imageUrls.length }
+        let updateImg = function() { imgElement.src = imageUrls[i] }
+        updateImg()
+        
+        return { next: () => {
+                increment()
+                updateImg()
+            }
+        }
+    }
+
+    
+    //Main
+    const images = ["url1.jpg", "url2.jpg", "url4.jpg"]
+    
+    let imgHandler = imageChanger(images, document.getElementById("myImg"))
+    imgHandler.next()
+    //  ...
+    //  ...
+```
+HTML:
+```HTML
+    <body>
+        <img id ="myImg" src="">
+        <button onclick="imgHandler.next()"></button>
+    </body>
+```
