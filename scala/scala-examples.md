@@ -1,7 +1,7 @@
 [Home](../README.md) > [Scala](scala-examples.md)
 
 ## Scala Examples
-Some example of simple application in Scala implementi and using language various features!
+Some example of simple applications in Scala implementing and using language's various features!
 
 ### StringGame Example (Various Scala Features)
 Just a scala example:

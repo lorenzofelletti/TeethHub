@@ -112,8 +112,8 @@ switch2.enable(); // switch2 is enabled
 ```
 
 ###  HTML IMG SLIDER
-Example of a closure creating a control structure for a `<img>` container in HTML to display and change a displayed image.
-This function return one method:
+Example of a closure creating a control structure for a `<img>` container in HTML to change the displayed image.
+This function return only one method:
 - `next`: show the next foto in the `<img>` container
 ```javascript
     function imageChanger(imageUrls, imgElement){
